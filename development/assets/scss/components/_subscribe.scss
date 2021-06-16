@@ -1,8 +1,13 @@
 .subscribe {
     transform: translateY(50%);
 
+    @include mq(mid-tablet, max) {
+        transform: none;
+    }
+
     &__content {
         max-width: 370px;
+        text-align: center;
     }
 
     &__header {
@@ -33,7 +38,7 @@
         cursor: pointer;
 
         &:hover {
-            transform: scale(.95);
+            transform: scale(.98);
         }
     }
 }
