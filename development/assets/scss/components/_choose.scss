@@ -10,12 +10,20 @@
 	margin-left: 50px;
 	width: 330px;
 
+	&:hover {
+		border: 2px solid $main-color;
+	}
+
 	&__select{
-			
-			box-sizing:content-box;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
+
+			@include mq(mid-tablet, max) {
+				flex-direction: column;
+				align-items: center;
+				gap: 30px;
+			}
 	}
 	&__current{
 			text-align: center;
@@ -33,9 +41,6 @@
 			list-style-type: none;  
 					 
 	}
-	&__border{
-			border: 2px solid $main-color;
-	}
 	
 	&__campaign{
 			text-align: center;
@@ -44,9 +49,6 @@
 			margin-bottom: 50px;
 			
 	}
-}
-.article{
-	padding:0px 175px 0px 175px ;
 }
 .btn{
 	&__select{
@@ -57,11 +59,10 @@
 			color: $main-color;
 			background-color:$white-color ;
 
-			&--click{
-					background: $main-color;
-					color: $white-color;
-					
-			}
+		&:hover {
+			background-color: $main-color;
+			color: $white-color;
+		}
 	}
 }
 .span{
