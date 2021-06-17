@@ -53,4 +53,8 @@ html, body {
     align-items: flex-start;
   }
 
+  &--map {
+    flex-direction: column;
+  }
+
 }
